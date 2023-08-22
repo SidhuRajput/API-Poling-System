@@ -1,13 +1,12 @@
 
 
-# Question Voting Application
+# API-Poling-System
  
 This is a simple open API application that allows users to create questions with options and add votes to the options. It uses Node.js as the server platform and MongoDB as the database for data storage.
 
 
 
-
-## Features
+## Features about App
 
 - Create a question: Users can create questions by sending a POST request to the /questions/create endpoint with the question text as the payload.
 
@@ -22,13 +21,14 @@ This is a simple open API application that allows users to create questions with
 - View a question with its options and votes: Users can view a question along with its options and the total votes received for each option by sending a GET request to the /questions/:id endpoint with the question ID as a parameter.
 
 
-## API ROUTES
+## API ROUTES used
 - POST /questions/create: Create a new question.
 - POST /questions/:id/options/create: Add options to a specific question.
 - POST /options/:id/add_vote: Add a vote to an option.
 - DELETE /questions/:id/delete: Delete a question.
 - DELETE /options/:id/delete: Delete an option.
 - GET /questions/:id: View a question with its options and votes.
+  
 ## Installation And Setup
 Make sure you have Node.js and npm (Node Package Manager) installed on your system.
 
@@ -54,7 +54,7 @@ To start the server, run the following command in the project directory:
 ```bash
 bash
 
-node index.js
+npm start
 ```
 The server will start running on http://localhost:3000 (or the port specified in the environment variable).
 ## Usage
